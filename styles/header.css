@@ -1,72 +1,77 @@
+.cabecalho-menu-hamburguer {
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/Menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
 .cabecalho {
     background-color: var(--branco);
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
-    }
-    
-    .cabecalho-menu-hamburguer {
-        width: 24px;
-        height: 24px;
-        background-image: url("../img/Menu.svg");
-        width: 24px;
-        height: 24px;
-        
-    }
+}
 
-    .container-imagem{
-        padding: 1em;
-    }
-
-    .container {
+.container {
     display: flex;
     align-items: center;
-    }
-    
-    .cabecalho-titulo {
+}
+
+.cabecalho-titulo {
     display: none;
-    }
-    
-    .container-menu{
-        display: none;
-        position: absolute;
-        top: 100%;
+}
 
-    }
+.container-imagem {
+    padding: 1em;
+}
 
-.container-botao:checked, .container-menu {
+
+.lista-menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 60vw;
+}
+
+.container-botao:checked~.lista-menu {
     display: block;
 }
 
-.menu-item, .menu-item-titulo {
+.lista-menu-titulo, .lista-menu-item {
     padding: 1em;
     background-color: var(--branco);
 }
-
-.menu-link {
-    text-transform: uppercase;
-    text-decoration: none;
-    color: var(--azul-degrade);
-}
-
-.menu-item-titulo {
+/* próxima aula */
+.lista-menu-titulo {
     color: var(--laranja);
+    font-weight: 700;
 }
 
-.container-botao {
-display: none;
+.container-botao{
+    display: none;
 }
+
+.lista-menu-link {
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+}
+
 .container-titulo-negrito {
     font-weight: 700;
 }
 
-    @media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
     .cabecalho-titulo {
-    display: flex;
+        display: flex;
     }
-    
+
     .cabecalho-imagem-transparente {
-    display: none;
+        display: none;
     }
-    }
+}

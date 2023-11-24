@@ -3,7 +3,7 @@
     color: var(--branco);
     text-align: center;
     padding: 2.5em 2em;
-}
+    }
 
 .banner-titulo {
     font-size: 18px;
@@ -12,26 +12,24 @@
 
 .banner-texto {
     font-weight: 500;
-    margin:1em 0
+    margin: 1em 0;
 }
-
-.baneer-pesquisa {
+/*Próxima aula */
+.banner-pesquisa {
     background-color: transparent;
     border: 1px solid var(--branco);
     color: var(--branco);
     border-radius: 24px;
     padding: 1em;
     width: 100%;
-    color: var(--branco);
 }
 
-.banner-pesquisa::placeholder {
-    color: var(--branco);
+.banner-pesquisa::placeholder{
     font-family: var(--fonte-principal);
     font-size: 14px;
     font-weight: 400;
     text-align: center;
-    background-image: url("../img/Pesquisa.svg");
-    background-repeat: no-repeat;
+    color: var(--branco);
+    background: url("../img/Pesquisa.svg") no-repeat;
     background-position: 1em;
 }
